@@ -4,15 +4,14 @@
     font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 100px; /* Adjust this value as needed to make it 'really big' */
+    font-size: 50px; /* Adjust this value as needed to make it 'really big' */
     text-align: center; /* Centers the text horizontally */
     margin-top: 20px; /* Adjust top margin as needed */
     margin-bottom: 20px; /* Adjust bottom margin as needed */
     color: aliceblue;
 }
 
-#Shadows{
-    font-family: "Cormorant", serif;
+#Shadows {
     font-weight: 300;
     font-style: normal;
     font-size: 100px; /* Adjust this value as needed to make it 'really big' */
@@ -20,7 +19,11 @@
     margin-top: 20px; /* Adjust top margin as needed */
     margin-bottom: 20px; /* Adjust bottom margin as needed */
     color: aliceblue;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+
 }
+
 
 .container1 {
     display: flex; /* Enable Flexbox */
@@ -31,20 +34,28 @@
 
 .container2 {
 display:flex;
-align-items: flex-end;
+align-items: flex-start;
 padding-left: 20px;
 }
 
 p {
-  font-family: 'Poppins', sans-serif; /* Use the Poppins font */
-  text-align: center; /* Center text horizontally */
+font-family: 'Poppins', sans- serif; /* Use the Poppins font */
+  text-align: right; /* Center text horizontally */
   margin: 20px 40px; /* Add top and bottom margins of 20px and left and right margins of 40px */
   color: aliceblue;
   font-size: 40px;
 }
 
 .container3{
-    
+    display: flex;
+    align-items:flex-end;
+    padding-right: 20px;
+}
+
+.text{
+    width: 50vw;
+    margin-left: auto;
+
 }
 
 body {
