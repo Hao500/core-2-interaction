@@ -35,6 +35,13 @@ p {
     background-size: cover; /* Ensures the background covers the entire page */
     background-position: center; /* Centers the background image on the page */
     background-repeat: no-repeat; /* Prevents the image from repeating */
+    content: "";
+    position: absolute; /* or 'absolute' */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
   }
   
 
