@@ -1,24 +1,47 @@
+@font-face {
+    font-family: 'ariblk'; 
+    src: url('fonts/ariblk.ttf') format('truetype'), 
+    font-weight: normal; 
+    font-style: normal; 
+  }
+
+@font-face {
+    font-family: 'Catchye';
+    src: url('fonts/Catchye.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'helvetica bold';
+    src: url('fonts/helvetica bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
 
 #Praise, #of {
-
+    font-family:'ariblk',sans-serif ;  
     font-weight: 300;
     font-style: normal;
-    font-size: 100px; /* Adjust this value as needed to make it 'really big' */
-    text-align: center; /* Centers the text horizontally */
+    font-size: 100px; 
+    text-align: left; 
     margin-top: 20px; /* Adjust top margin as needed */
     margin-bottom: 20px; /* Adjust bottom margin as needed */
     color: rgb(0, 0, 0);
 }
 
 #Shadows {
+    font-family: 'Catchye',serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 100px; /* Adjust this value as needed to make it 'really big' */
+    font-size: 100px; 
     text-align: right; /* Centers the text horizontally */
     margin-top: 20px; /* Adjust top margin as needed */
     margin-bottom: 20px; /* Adjust bottom margin as needed */
+    
     color: rgb(0, 0, 0);
-    font-family: 
     font-optical-sizing: auto;
 
 }
@@ -32,21 +55,22 @@
 }
 
 .container2 {
-display:flex;
-align-items: flex-start;
-padding-left: 20px;
+    display:flex;
+    align-items: flex-end;
+    padding-right: 20px;
+    justify-content: flex-end;
+   
 }
 
 p {
-  font-family: 'Poppins', sans- serif; /* Use the Poppins font */
-  text-align: left; 
-  margin: 20px 40px; /* Add top and bottom margins of 20px and left and right margins of 40px */
-  color: rgb(0, 0, 0);
-  font-size: 14px;
+    font-family: 'helvetica bold', sans-serif; 
+    text-align: left; 
+    margin: 20px 40px; /* Add top and bottom margins of 20px and left and right margins of 40px */
+    color: rgb(0, 0, 0);
+    font-size: 14px;
 }
 
 .container3{
-
     align-items:flex-end;
     padding-right: 20px;
     width: 50vw;
