@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'ariblk'; 
+    font-family: 'Baskervville-Regular'; 
     src: url('fonts/Baskervville-Regular.otf') format('truetype'), 
     font-weight: normal; 
     font-style: normal; 
@@ -20,18 +20,30 @@
   }
 
 
+body, html {
+    height: 100%;
+    margin: 0;
+  }
   
 
 #Praise, #of {
     font-family:'Baskervville-Regular',sans-serif ;  
     font-weight: 300;
     font-style: normal;
-    font-size: 100px; 
+    font-size: 110px; 
     text-align: left; 
-    margin-top: 20px; /* Adjust top margin as needed */
-    margin-bottom: 20px; /* Adjust bottom margin as needed */
-    color: rgb(0, 0, 0);
-    line-height: 1; 
+    margin-top: 50px; /* Adjust top margin as needed */
+    margin-bottom: 0px; /* Adjust bottom margin as needed */
+    color: rgb(255, 255, 255);
+    line-height: 0.8; 
+}
+
+.container1 {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the start (left) of the container */
+    padding-left: 30%; /* Add space from the left edge of the container */
+    
 }
 
 #Shadows {
@@ -40,37 +52,30 @@
     font-style: normal;
     font-size: 300px; 
     text-align: right; /* Centers the text horizontally */
-    margin-top: 2%; /* Adjust top margin as needed */
-    margin-bottom: 20px; /* Adjust bottom margin as needed */
-    
-    color: rgb(0, 0, 0);
+    margin-top: -60px; /* Adjust top margin as needed */
+    margin-bottom: 5px; /* Adjust bottom margin as needed */
+    color: rgb(255, 255, 255);
     font-optical-sizing: auto;
 
 }
 
 
-.container1 {
-    display: flex; /* Enable Flexbox */
-    flex-direction: column; /* Stack children vertically */
-    align-items: flex-start; /* Align items to the start (left) of the container */
-    padding-left: 35%; /* Add space from the left edge of the container */
-    
-}
-
 .container2 {
     display:flex;
     align-items: flex-end;
-    padding-right: 30%;
+    padding-right: 25%;
     justify-content: flex-end;
    
 }
 
-p {
-    font-family: 'helvetica bold', sans-serif; 
+
+p{
+    font-family: 'Baskervville-Regular', sans-serif; 
     text-align: left; 
-    margin: 20px 40px; /* Add top and bottom margins of 20px and left and right margins of 40px */
-    color: rgb(0, 0, 0);
-    font-size: 14px;
+    margin: 10px 40px; /* Add top and bottom margins of 20px and left and right margins of 40px */
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 1.8; 
 }
 
 .container3{
@@ -80,16 +85,79 @@ p {
     margin-left: auto;
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
+
+.container3.inner-page {
+    /* New styles for inner pages */
+    padding-left: 50px; /* Example: add padding to adjust text position */
+    padding-top: 25%; /* Example: adjust the top padding as needed */
   }
+
   
 .home-background{
     background: url('../project-1/images /homebackground.gif') no-repeat center center fixed;
     background-size: cover;
   }
   
+
+.introbackground{
+  position: fixed; /* Use fixed or absolute positioning */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Viewport width */
+  height: 100vh; /* Viewport height */
+  object-fit: cover; /* This will cover the whole area, might crop the image */
+  z-index: -1; /* Send the image to the back */
+}
+
+.menu {
+    position: fixed; /* Keep the menu in place while scrolling */
+    top: 0;
+    left: 10px;
+    z-index: 1000; /* High value to keep it above other elements */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu h4 {
+    display: inline; /* Display numbers on the same line */
+    margin-right: 20px; /* Adjust space between numbers */
+    font-size: 2em; /* Adjust font size to desired size */
+  }
+  
+  .menu h4 a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(255, 255, 255); /* Color of the numbers */
+  }
+  
+
+  .studybay p{
+    
+        color: #000000; /* This sets the paragraph text color to red */
+      }
+      
+      .audio-player {
+        position: fixed; /* Fixed position */
+        top: 10px; /* Distance from the top */
+        right: 10px; /* Distance from the right */
+        z-index: 100; /* Ensures it stays on top of other elements */
+      }
+      
+      .audio-player button {
+        border-radius: 50%; /* Makes the button round */
+        width: 50px; /* Size of the button */
+        height: 50px; /* Size of the button */
+        background: #f6afec9e; /* Background color */
+        color: white; /* Text color */
+        border: none; /* Removes border */
+        cursor: pointer; /* Cursor indicates a clickable button */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */
+      }
+      
+      /* Hide the default audio controls */
+      audio {
+        display: none;
+      }
+      
 
 
 
