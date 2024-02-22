@@ -51,7 +51,7 @@
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Stack children vertically */
     align-items: flex-start; /* Align items to the start (left) of the container */
-    padding-left: 20px; /* Add space from the left edge of the container */
+    padding-left: 10%; /* Add space from the left edge of the container */
 }
 
 .container2 {
@@ -82,8 +82,8 @@ body, html {
     margin: 0;
   }
   
-  body {
-    background: url('../project-1/images /homebackground2.gif') no-repeat center center fixed;
+.home-background{
+    background: url('../project-1/images /homebackground.gif') no-repeat center center fixed;
     background-size: cover;
   }
   
