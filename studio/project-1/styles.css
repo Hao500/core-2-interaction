@@ -77,7 +77,15 @@ p {
     margin-left: auto;
 }
 
-.video container
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+
+
 
 
 
