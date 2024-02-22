@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'ariblk'; 
-    src: url('fonts/ariblk.ttf') format('truetype'), 
+    src: url('fonts/Baskervville-Regular.otf') format('truetype'), 
     font-weight: normal; 
     font-style: normal; 
   }
 
 @font-face {
-    font-family: 'Catchye';
-    src: url('fonts/Catchye.otf') format('opentype');
+    font-family: 'ZapfinoExtraLTPro';
+    src: url('fonts/ZapfinoExtraLTPro.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
@@ -18,11 +18,12 @@
     font-weight: normal;
     font-style: normal;
   }
+
+
   
 
-
 #Praise, #of {
-    font-family:'ariblk',sans-serif ;  
+    font-family:'Baskervville-Regular',sans-serif ;  
     font-weight: 300;
     font-style: normal;
     font-size: 100px; 
@@ -30,15 +31,16 @@
     margin-top: 20px; /* Adjust top margin as needed */
     margin-bottom: 20px; /* Adjust bottom margin as needed */
     color: rgb(0, 0, 0);
+    line-height: 1; 
 }
 
 #Shadows {
-    font-family: 'Catchye',serif;
+    font-family: 'ZapfinoExtraLTPro',serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 100px; 
+    font-size: 300px; 
     text-align: right; /* Centers the text horizontally */
-    margin-top: 20px; /* Adjust top margin as needed */
+    margin-top: 2%; /* Adjust top margin as needed */
     margin-bottom: 20px; /* Adjust bottom margin as needed */
     
     color: rgb(0, 0, 0);
@@ -51,13 +53,14 @@
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Stack children vertically */
     align-items: flex-start; /* Align items to the start (left) of the container */
-    padding-left: 10%; /* Add space from the left edge of the container */
+    padding-left: 35%; /* Add space from the left edge of the container */
+    
 }
 
 .container2 {
     display:flex;
     align-items: flex-end;
-    padding-right: 20px;
+    padding-right: 30%;
     justify-content: flex-end;
    
 }
@@ -72,7 +75,7 @@ p {
 
 .container3{
     align-items:flex-end;
-    padding-right: 20px;
+    padding-right: 50px;
     width: 50vw;
     margin-left: auto;
 }
