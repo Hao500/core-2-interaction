@@ -19,6 +19,12 @@
     font-style: normal;
   }
 
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+    --menu-color: rgb(255, 255, 255);
+    --button-bg-color: #f6afec9e;
+
 
 body, html {
     height: 100%;
@@ -34,7 +40,7 @@ body, html {
     text-align: left; 
     margin-top: 50px; /* Adjust top margin as needed */
     margin-bottom: 0px; /* Adjust bottom margin as needed */
-    color: rgb(255, 255, 255);
+    color: var(--white);
     line-height: 0.8; 
 }
 
@@ -54,7 +60,7 @@ body, html {
     text-align: right; /* Centers the text horizontally */
     margin-top: -60px; /* Adjust top margin as needed */
     margin-bottom: 5px; /* Adjust bottom margin as needed */
-    color: rgb(255, 255, 255);
+    color:var(--white);
     font-optical-sizing: auto;
 
 }
@@ -73,7 +79,7 @@ p{
     font-family: 'Baskervville-Regular', sans-serif; 
     text-align: left; 
     margin: 10px 40px; /* Add top and bottom margins of 20px and left and right margins of 40px */
-    color: rgb(255, 255, 255);
+    color: var(--white);
     font-size: 15px;
     line-height: 1.8; 
 }
@@ -118,21 +124,23 @@ p{
     margin: 0;
   }
   
+
   .menu h4 {
     display: inline; /* Display numbers on the same line */
     margin-right: 20px; /* Adjust space between numbers */
     font-size: 2em; /* Adjust font size to desired size */
   }
-  
+
   .menu h4 a {
     text-decoration: none; /* Remove underline from links */
-    color: rgb(255, 255, 255); /* Color of the numbers */
+    color:var(--white); /* Color of the numbers */
+
   }
   
 
   .studybay p{
     
-        color: #000000; /* This sets the paragraph text color to red */
+        color: var(--black); /* This sets the paragraph text color to red */
       }
       
       .audio-player {
@@ -147,7 +155,7 @@ p{
         width: 50px; /* Size of the button */
         height: 50px; /* Size of the button */
         background: #f6afec9e; /* Background color */
-        color: white; /* Text color */
+        color: var(--white); /* Text color */
         border: none; /* Removes border */
         cursor: pointer; /* Cursor indicates a clickable button */
         box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: adds shadow for depth */

@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    gap: 1 px;
+    grid-template-columns: repeat(2, 1fr);
+  
+  
+    /* not related to grid */
+    background-color: orange;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+    min-height: 200px;
+  }
+
+  .column-2 {
+    grid-column: span 2;
+  }
