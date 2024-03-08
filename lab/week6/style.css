@@ -1,16 +1,18 @@
-.grid {
-    display: grid;
-    gap: 1 px;
-    grid-template-columns: repeat(2, 1fr);
-  
-  
-    /* not related to grid */
-    background-color: orange;
-    font-family: sans-serif;
-    margin-bottom: 25px;
-    min-height: 200px;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px;
+}
 
-  .column-2 {
-    grid-column: span 2;
-  }
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.grid-item img{
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Keeps the aspect ratio intact */
+}
