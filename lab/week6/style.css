@@ -1,12 +1,13 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 5px;
+  padding: 50px;
+  margin-top: 80px;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(2, 182, 236, 0.8);
   padding: 5px;
   font-size: 10px;
   text-align: center;
@@ -14,5 +15,19 @@
 
 .grid-item img{
   width: 100px; /* Adjust the width as needed */
-  height: auto; /* Keeps the aspect ratio intact */
+  height: 150px; /* auto:Keeps the aspect ratio intact */
+}
+
+body{
+  background-color: rgba(172, 228, 245, 0.944);
+}
+
+p {
+  font-family: 'Courier Prime',serif; 
+  font-size: 46px; 
+  color: #333; 
+  position: absolute;
+  top: 0;
+  left: 40px;
+  z-index: 40; /* Make sure it's above the other elements */
 }
