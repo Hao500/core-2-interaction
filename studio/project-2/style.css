@@ -1,32 +1,44 @@
-.image-container {
-    position: relative;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Adjust the space between items */
+  max-width: 1600px;
+  margin: 4rem;
+}
 
 
-.dress {
-    position:relative;
-    max-width: 100%; /* Ensures image is responsive and doesn't overflow its container */
-    height: auto; /* Keeps image aspect ratio intact */
-    width: 20%; /* Adjust this to scale the image size */
-    position: relative; /* Use 'absolute' if you need to position it outside of normal document flow */
-    left: 0; /* Aligns the image to the left of the container */
+.item-container{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 100%; /* full width on small screens */
+}
+
+
+.number{
+  grid-column: 1 / 3;
+  grid-row: 1;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+.item-container img {
+  max-width: 80%; /* ensures image is contained within its element */
+  height: auto; /* maintains aspect ratio */
+}
+
+
+
+
+/* This media query applies styles for screens wider than 1000px */
+@media (min-width: 1000px) {
+  .item-container {
+    width: 90%; /* one third the width on large screens */
+    max-width: 600px; /* maximum size */
   }
-  
-.center-large {
-    width: 60%; /* Or any size you want */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the image perfectly */
-  }
- 
-.number-label {
-    position: absolute;
-    top: 10px; /* Adjust as necessary */
-    left: 10px; /* Adjust as necessary */
-    z-index: 10; /* Ensures the number appears above the image */
-    /* Additional styles here for color, background, etc. */
-    pointer-events: none;
+}
+
+.object.text p {
+  font-family: 'Arial Black', sans-serif;
 
 }
