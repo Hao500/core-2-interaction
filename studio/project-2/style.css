@@ -1,44 +1,134 @@
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px; /* Adjust the space between items */
-  max-width: 1600px;
-  margin: 4rem;
-}
-
-
-.item-container{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  width: 100%; /* full width on small screens */
-}
-
-
-.number{
-  grid-column: 1 / 3;
-  grid-row: 1;
-  font-family: 'Courier New', Courier, monospace;
-
-}
-
-
-.item-container img {
-  max-width: 80%; /* ensures image is contained within its element */
-  height: auto; /* maintains aspect ratio */
+.container {
+  position: relative;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
 }
 
 
 
+.item img {
+  max-width: 400px; /* limits the image to the width of its parent container */
+  height: auto; /* maintains the aspect ratio */
+}
 
-/* This media query applies styles for screens wider than 1000px */
-@media (min-width: 1000px) {
-  .item-container {
-    width: 90%; /* one third the width on large screens */
-    max-width: 600px; /* maximum size */
+/* Use media queries for different screen sizes */
+@media (max-width: 768px) {
+  body{
+    background-color: rgb(244, 145, 219);
+  }
+  .item img {
+    max-width: 40%; /* smaller images on smaller screens */
   }
 }
 
-.object.text p {
-  font-family: 'Arial Black', sans-serif;
+
+
+.item{
+  position:absolute;
+}
+
+
+#meshtop img{
+  position: absolute;
+  top: 1%;
+  left: 15vw;
+  width:500px;
+}
+
+#blazer img{
+  position: absolute;
+  top: 30vh;
+  left: 30vw;
+  width: 220px;
+}
+
+#corset img{
+  position: absolute;
+  top: 50vh;
+  left: 51vw;
+  width: 200px;
+}
+
+#mugler img{
+  position: absolute;
+  top: 45vh;
+  left: 70vw;
+  width: 200px;
+}
+
+#omightytop img{
+  position: absolute;
+  top: 1vh;
+  left: 90vw;
+  width:230px;
+}
+
+#ottolinger img{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width:190px;
+}
+
+#pinksweater img{
+  position: absolute;
+  top: 60vh;
+  left: 26vw;
+  width:250px;
+}
+
+#prayinghat img{
+  position: absolute;
+  top: 60vh;
+  left: 51vw;
+  width:200px;
+}
+
+#ro img{
+  position: absolute;
+  top: 1vh;
+  left: 66vw;
+  width:300px;
+}
+
+#hoodie img{
+  position: absolute;
+  top: 30vh;
+  left: 60vw;
+  width:300px;
+}
+
+#whiteskirt img{
+  position: absolute;
+  top: 60vh;
+  left: 1vw;
+  width:200px;
+}
+
+#windsor img{
+  position: absolute;
+  top: 60vh;
+  left: 45vw;
+  width:220px;
+}
+
+#gaultierskirt img{
+  position: absolute;
+  top: 1vh;
+  left: 51vw;
+  width:220px;
+}
+
+#item14 img{
+  position: absolute;
+  top: 30vh;
+  left: 90vw;
+  width:40vw;
+}
+
+.innerimage{
+  position:absolute;
+  width: 800px;
+  left: 50vw;
 
 }
