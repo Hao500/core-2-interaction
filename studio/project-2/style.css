@@ -2,133 +2,163 @@
   position: relative;
   width: 100vw; /* 100% of the viewport width */
   height: 100vh; /* 100% of the viewport height */
+  text-align: center;
 }
 
 
 
-.item img {
-  max-width: 400px; /* limits the image to the width of its parent container */
-  height: auto; /* maintains the aspect ratio */
-}
 
-/* Use media queries for different screen sizes */
-@media (max-width: 768px) {
-  body{
-    background-color: rgb(244, 145, 219);
+div {
+  border: 2px solid red;
+  display: inline-block;
   }
-  .item img {
-    max-width: 40%; /* smaller images on smaller screens */
-  }
-}
 
-
-
-.item{
-  position:absolute;
-}
-
-
-#meshtop img{
+#meshtop {
   position: absolute;
   top: 1%;
-  left: 15vw;
-  width:500px;
+  left: 6vw;
+  width: 35vw;
+  transform-origin: center;
 }
 
-#blazer img{
-  position: absolute;
-  top: 30vh;
-  left: 30vw;
-  width: 220px;
-}
-
-#corset img{
-  position: absolute;
-  top: 50vh;
-  left: 51vw;
-  width: 200px;
-}
-
-#mugler img{
+#corset {
   position: absolute;
   top: 45vh;
-  left: 70vw;
-  width: 200px;
-}
-
-#omightytop img{
-  position: absolute;
-  top: 1vh;
-  left: 90vw;
-  width:230px;
-}
-
-#ottolinger img{
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  width:190px;
-}
-
-#pinksweater img{
-  position: absolute;
-  top: 60vh;
-  left: 26vw;
-  width:250px;
-}
-
-#prayinghat img{
-  position: absolute;
-  top: 60vh;
-  left: 51vw;
-  width:200px;
-}
-
-#ro img{
-  position: absolute;
-  top: 1vh;
-  left: 66vw;
-  width:300px;
-}
-
-#hoodie img{
-  position: absolute;
-  top: 30vh;
-  left: 60vw;
-  width:300px;
-}
-
-#whiteskirt img{
-  position: absolute;
-  top: 60vh;
   left: 1vw;
-  width:200px;
+  width: 18vw;
+  transform-origin: center;
 }
 
-#windsor img{
-  position: absolute;
-  top: 60vh;
-  left: 45vw;
-  width:220px;
-}
-
-#gaultierskirt img{
+#mugler {
   position: absolute;
   top: 1vh;
-  left: 51vw;
-  width:220px;
+  left: 35vw;
+  width: 13vw;
+  transform-origin: center;
 }
 
-#item14 img{
+#omightytop {
   position: absolute;
-  top: 30vh;
-  left: 90vw;
-  width:40vw;
+  top: 1vh;
+  left: 70vw;
+  width:15vw;
+  transform-origin: center;
 }
+
+#ottolinger {
+  position: absolute;
+  top: 60vh;
+  left: 53vw;
+  width:16vw;
+  transform-origin: center;
+}
+
+#pinksweater {
+  position: absolute;
+  top: 1%;
+  left: 35vw;
+  width:30vw;
+  transform-origin: center;
+}
+
+#windsor {
+  position: absolute;
+  top: 20vh;
+  left: 62vw;
+  width:25vw;
+  transform-origin: center;
+}
+
+#prayinghat {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width:18vw;
+  transform-origin: center;
+}
+
+#ro {
+  position: absolute;
+  top: 50vh;
+  left: 28vw;
+  width:14vw;
+  transform-origin: center;
+}
+
+
+#whiteskirt {
+  position: absolute;
+  top: 4vh;
+  left: 55vw;
+  width:15vw;
+  transform-origin: center;
+}
+
+#hoodie {
+  position: absolute;
+  top: 45vh;
+  left: 80vw;
+  width:13vw;
+  transform-origin: center;
+}
+
+#gaultierskirt {
+  position: absolute;
+  top: 1vh;
+  left: 18vw;
+  width:12vw;
+  transform-origin: center;
+}
+
 
 .innerimage{
-  position:absolute;
   width: 800px;
-  left: 50vw;
+  display: block;/* Makes the image a block-level element, allowing margin auto to center */
+  margin-left: auto;/* Automatically adjusts the left margin to center the image */
+  margin-right: auto;
 
+}
+
+.object-text{
+    font-family: arial, sans-serif; /* Sets the font */
+    position: absolute; /* Positions the element absolutely within its closest positioned ancestor */
+    top: 50%; /* Positions the text halfway down the parent container */
+    left: 50%; /* Positions the text halfway across the parent container */
+    transform: translate(-50%, -50%); /* Centers the text exactly */
+    text-align: center; /* Ensures the text itself is centered */
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  body {
+    background-image: radial-gradient(circle, #3fdd00, #73e86b, #ececec);
+  }
+
+  /* Default state of the text */
+.text-intro {
+  color: black; /* or any color */
+  transition: color 0.3s ease; /* smooth transition for color change */
+}
+
+/* Hover state */
+.text-intro:hover {
+  color: white; /* this is the color text will change to when hovered */
+}
+
+.link-style {
+  font-family: Arial, sans-serif; /* Example font */
+  text-decoration: none; /* Removes underline */
+  color: black; /* Text color */
+}
+
+.cloth-home {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+}
+
+.accessories {
+  position: absolute;
+  top: 100px; /* Adjust as needed */
+  left: 50px; /* Adjust as needed */
 }
