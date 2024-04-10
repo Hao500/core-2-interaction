@@ -235,7 +235,7 @@ div {
   position: absolute;
   top: 15vh;
   left: 10vw;
-  width: 25vw;
+  width: 20vw;
   transform-origin: center;
 }
 
@@ -261,7 +261,7 @@ div {
 
 #twistedhome{
   position: absolute;
-  top: 20vh;
+  top: 13vh;
   left: 70vw;
   width:30vw;
   transform-origin: center;
@@ -270,8 +270,8 @@ div {
 #vwarmorring{
   position: absolute;
   top: 55vh;
-  left: 53vw;
-  width:25vw;
+  left: 69vw;
+  width:21vw;
   transform-origin: center;
 }
 
@@ -285,9 +285,18 @@ div {
 
 #vworbnecklace{
   position: absolute;
-  top: 3vh;
-  left: 60vw;
-  width:30vw;
+  top: 22vh;
+  left: 24vw;
+  width:39vw;
+  transform-origin: center;
+}
+
+
+#crossringhome{
+  position: absolute;
+  top:9vh;
+  left: 58vw;
+  width:15vw;
   transform-origin: center;
 }
 
