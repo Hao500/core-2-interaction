@@ -7,15 +7,13 @@
 
 
 
-
 div {
-  border: 2px solid red;
   display: inline-block;
   }
 
 #meshtop {
   position: absolute;
-  top: 1%;
+  top: 15vh;
   left: 6vw;
   width: 35vw;
   transform-origin: center;
@@ -40,7 +38,7 @@ div {
 #omightytop {
   position: absolute;
   top: 1vh;
-  left: 70vw;
+  left: 80vw;
   width:15vw;
   transform-origin: center;
 }
@@ -55,23 +53,24 @@ div {
 
 #pinksweater {
   position: absolute;
-  top: 1%;
+  top: 40vh;
   left: 35vw;
-  width:30vw;
+  width:25vw;
   transform-origin: center;
+ 
 }
 
 #windsor {
   position: absolute;
-  top: 20vh;
+  top: 1vh;
   left: 62vw;
-  width:25vw;
+  width:26vw;
   transform-origin: center;
 }
 
-#prayinghat {
+#prayingcap {
   position: absolute;
-  top: 1vh;
+  top: 1%;
   left: 1vw;
   width:18vw;
   transform-origin: center;
@@ -79,7 +78,7 @@ div {
 
 #ro {
   position: absolute;
-  top: 50vh;
+  top: 70vh;
   left: 28vw;
   width:14vw;
   transform-origin: center;
@@ -134,14 +133,9 @@ div {
     background-image: radial-gradient(circle, #3fdd00, #73e86b, #ececec);
   }
 
-  /* Default state of the text */
-.text-intro {
-  color: black; /* or any color */
-  transition: color 0.3s ease; /* smooth transition for color change */
-}
 
 /* Hover state */
-.text-intro:hover {
+.object-text:hover {
   color: white; /* this is the color text will change to when hovered */
 }
 
@@ -161,4 +155,146 @@ div {
   position: absolute;
   top: 100px; /* Adjust as needed */
   left: 50px; /* Adjust as needed */
+}
+
+
+.homepage{
+  display:flex;
+  justify-content: center;/* 水平居中子元素 */
+  align-items:center;/* 垂直居中子元素 */
+  height:100vh;
+}
+
+
+.image-container {
+  position: relative; /* 相对定位，用于绝对定位内部的链接 */
+  display: flex; /* 创建另一个flex容器 */
+  justify-content: center; /* 水平居中内部元素 */
+  align-items: center; /* 垂直居中内部元素 */
+  width: 100%; /* 或者是图片的宽度 */
+  height: 500px;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.5);
+  z-index: 2;
+  transition: opacity 0.3s;
+  opacity: 0; /* 默认情况下，我们不显示背景 */
+}
+
+
+.linkhomepage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 这个是关键，确保链接完全居中 */
+  z-index: 3; /* 确保链接在图片上方 */
+  font-size: 15px;
+  font-weight:500;
+  color:rgb(47, 210, 255);
+  text-decoration: none;
+}
+
+.gif{
+  width:50vw;
+  height:100vh;
+  object-fit:fill;
+}
+
+#gif1{
+  opacity: 1;
+  background-color: white; 
+}
+
+#gif1:hover {
+  opacity: 0.5;
+  background-color: white;
+}
+
+#gif2{
+  opacity: 1;
+  background-color: white;
+}
+
+
+
+#gif2:hover {
+  opacity: 0.5;
+  background-color: white;
+}
+
+
+
+#Chanelring{
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  width: 25vw;
+  transform-origin: center;
+}
+
+
+
+#diorstarring{
+  position: absolute;
+  top: 45vh;
+  left: 1vw;
+  width: 18vw;
+  transform-origin: center;
+}
+
+
+
+#krystal{
+  position: absolute;
+  top: 1vh;
+  left: 35vw;
+  width: 13vw;
+  transform-origin: center;
+}
+
+#twistedhome{
+  position: absolute;
+  top: 20vh;
+  left: 70vw;
+  width:30vw;
+  transform-origin: center;
+}
+
+#vwarmorring{
+  position: absolute;
+  top: 55vh;
+  left: 53vw;
+  width:25vw;
+  transform-origin: center;
+}
+
+#vwblackring{
+  position: absolute;
+  top: 40vh;
+  left: 30vw;
+  width:25vw;
+  transform-origin: center;
+}
+
+#vworbnecklace{
+  position: absolute;
+  top: 3vh;
+  left: 60vw;
+  width:30vw;
+  transform-origin: center;
+}
+
+.link{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight:600;
+  color:black;
+  text-decoration: none;
 }

@@ -1,0 +1,87 @@
+.container {
+    position: relative;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    text-align: center;
+  }
+  
+  
+  
+  
+  div {
+   
+    display: block;
+    }
+  
+  
+  .innerimage{
+    width: 800px;
+    display: block;/* Makes the image a block-level element, allowing margin auto to center */
+    margin-left: auto;/* Automatically adjusts the left margin to center the image */
+    margin-right: auto;
+  
+  }
+  
+  .object-text{
+      font-family: arial, sans-serif; /* Sets the font */
+      position: absolute; /* Positions the element absolutely within its closest positioned ancestor */
+      top: 50%; /* Positions the text halfway down the parent container */
+      left: 50%; /* Positions the text halfway across the parent container */
+      transform: translate(-50%, -50%); /* Centers the text exactly */
+      text-align: center; /* Ensures the text itself is centered */
+      font-size: 70px;
+      line-height: 80px;
+    }
+  
+    body {
+      background-image: radial-gradient(circle, #3fdd00, #73e86b, #ececec);
+    }
+  
+    /* Default state of the text */
+  .text-intro {
+    color: black; /* or any color */
+    transition: color 0.3s ease; /* smooth transition for color change */
+  }
+  
+  /* Hover state */
+  .object-text:hover {
+    color: white; /* this is the color text will change to when hovered */
+  }
+  
+
+  
+  .cloth-home {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+  }
+  
+
+  .link{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight:600;
+    color:black;
+    text-decoration: none;
+  }
+
+  hr.new1 {
+    border-top: 1px solid black;
+    margin:0 auto;
+    width: 100%;
+  }
+
+  hr.new2 {
+    border-top: 1px solid black;
+    transform:translate(-50%,-50%) rotate(90deg);
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:100%;
+    width: 100%;
+  }
+
+  .container-for-hr{
+    position:relative;
+    height:100vh;
+  }
