@@ -8,7 +8,8 @@
 
   body {
     position:relative;
-    background-image: radial-gradient(circle, #3fdd00, #73e86b, #ececec);
+    
+    /* background-image: radial-gradient(circle, #3fdd00, #73e86b, #ececec); */
     cursor: url('images/star.cur'), auto;
   }
   

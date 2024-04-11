@@ -19,9 +19,10 @@ div {
 
 
 body {
-   
     cursor: url('images/star.cur'), auto;
+
   }
+
 
 /* 针对所有的图片项，添加过渡效果以便变化平滑 */
 .item {
@@ -34,6 +35,29 @@ body {
   transform: scale(1.4); /* 放大到原始大小的105%，可根据需求调整 */
 }
 
+@keyframes rotateBackground {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* This class is for the rotating background container */
+.rotating-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/sharp2.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  animation: rotateBackground 30s linear infinite;
+}
 
 
 #meshtop {
