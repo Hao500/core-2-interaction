@@ -62,7 +62,7 @@ body {
 
 #meshtop {
   position: absolute;
-  top: 15vh;
+  top: 12vh;
   left: 6vw;
   width: 35vw;
   transform-origin: center;
@@ -136,9 +136,9 @@ body {
 
 #whiteskirt {
   position: absolute;
-  top: 4vh;
-  left: 50vw;
-  width:15vw;
+  top: 6vh;
+  left: 48vw;
+  width:12vw;
   transform-origin: center;
 }
 
@@ -152,8 +152,8 @@ body {
 
 #gaultierskirt {
   position: absolute;
-  top: 1vh;
-  left: 18vw;
+  top: 45vh;
+  left: 4vw;
   width:12vw;
   transform-origin: center;
 }

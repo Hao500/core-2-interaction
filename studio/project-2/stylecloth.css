@@ -112,3 +112,18 @@
   z-index: 1000; /* 确保按钮在页面上的其他元素之上 */
 }
 
+.previouspagebotton{
+  position: fixed; /* 使用固定定位，这样元素会固定在视口的相对位置 */
+  left: 20px; /* 距离视口右侧20像素 */
+  bottom: 20px; /* 距离视口底部20像素 */
+  padding: 8px 16px; /* 内填充，上下10像素，左右20像素，根据需要调整以改变按钮大小 */
+  background-color: transparent; 
+  color: black; 
+  text-decoration: none; /* 去掉下划线 */
+  border-radius: 30px; /* 设置边框圆角的半径为15像素，创建圆弧型边框,数字越大越圆润*/
+  font-size: 16px; /* 设置字体大小 */
+  border: 1px solid black; 
+  cursor: pointer; /* 当鼠标悬停时显示指针光标，表明这是一个可以点击的元素 */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影，增加立体效果 */
+  z-index: 1000; /* 确保按钮在页面上的其他元素之上 */
+}
