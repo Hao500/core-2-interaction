@@ -167,22 +167,7 @@ body {
 
 }
 
-.object-text{
-    font-family: arial, sans-serif; /* Sets the font */
-    position: absolute; /* Positions the element absolutely within its closest positioned ancestor */
-    top: 50%; /* Positions the text halfway down the parent container */
-    left: 50%; /* Positions the text halfway across the parent container */
-    transform: translate(-50%, -50%); /* Centers the text exactly */
-    text-align: center; /* Ensures the text itself is centered */
-    font-size: 70px;
-    line-height: 80px;
-  }
 
-
-/* Hover state */
-.object-text:hover {
-  color: white; /* this is the color text will change to when hovered */
-}
 
 .link-style {
   font-family: Arial, sans-serif; /* Example font */

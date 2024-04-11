@@ -43,8 +43,8 @@
     }
  
   /* Hover state */
-  .object-text:hover {
-    color: white; /* this is the color text will change to when hovered */
+  .meshtop.object-text:hover {
+    color: #7c6c5f; /* this is the color text will change to when hovered */
   }
   
 
