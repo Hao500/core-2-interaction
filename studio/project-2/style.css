@@ -1,3 +1,9 @@
+* {
+  cursor: url('images/star.cur'), auto;
+  }
+
+
+
 .container {
   position: relative;
   width: 100vw; /* 100% of the viewport width */
@@ -11,6 +17,12 @@ div {
   display: inline-block;
   }
 
+
+body {
+   
+    cursor: url('images/star.cur'), auto;
+  }
+
 /* 针对所有的图片项，添加过渡效果以便变化平滑 */
 .item {
   transition: transform 0.3s ease; /* 动画过渡时间可以根据需要调整 */
@@ -19,8 +31,9 @@ div {
 
 /* 当鼠标悬停在具有类名 'item' 的元素上时，放大图片 */
 .item:hover {
-  transform: scale(1.15); /* 放大到原始大小的105%，可根据需求调整 */
+  transform: scale(1.4); /* 放大到原始大小的105%，可根据需求调整 */
 }
+
 
 
 #meshtop {
@@ -139,10 +152,6 @@ div {
     text-align: center; /* Ensures the text itself is centered */
     font-size: 70px;
     line-height: 80px;
-  }
-
-  body {
-    background-image: radial-gradient(circle, #3fdd00, #73e86b, #ececec);
   }
 
 
@@ -289,7 +298,7 @@ div {
 
 #vwblackring{
   position: absolute;
-  top: 40vh;
+  top: 60vh;
   left: 30vw;
   width:25vw;
   transform-origin: center;

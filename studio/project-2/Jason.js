@@ -102,9 +102,27 @@ let collection = [
 
 
 
-let materialist=document.gotElementById("material_List");
+let materialist=document.getElementById("material_List");
 for(let i = 0; i< collection.length; i++) {
     console.log(collection[i].Fabric);
 
 
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // 为每张图片添加鼠标悬浮和离开的事件监听器
+    document.querySelectorAll('.item').forEach(function (item) {
+      item.addEventListener('mouseenter', function () {
+        // 当鼠标悬浮在图片上时，改变背景颜色。
+        // 'data-color' 是自定义属性，用于存储每张图片对应的背景色
+
+        console.log("testing hover");
+        document.body.style.background =item.dataset.color;
+      });
+      item.addEventListener('mouseleave', function () {
+        // 当鼠标移开图片时，恢复背景颜色为初始的颜色
+        document.body.style.background = ''; // 这里设置为你的页面默认的背景颜色
+      });
+    });
+  });
+  
