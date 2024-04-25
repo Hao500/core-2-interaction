@@ -1,6 +1,10 @@
 body {
   display: grid;
   place-items: center; /* 同时设置水平和垂直居中 */
+  margin:0;
+  background-image: url('../project-3/images /flower_.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh; /* 确保 body 占满整个视口高度 */
   margin: 0; /* 移除默认的 margin */
 }
@@ -19,7 +23,7 @@ body {
 
 
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5); /* 调整不透明度以显示背景 */
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 30px;
     text-align: center;
@@ -30,10 +34,11 @@ body {
   }
 
   .grid-item:nth-child(even) {
-    background-color: blue;
+    background-color: rgb(123, 216, 247);
   }
   
   /* 奇数项使用白色背景 */
   .grid-item:nth-child(odd) {
     background-color: white;
   }
+
