@@ -23,14 +23,14 @@ function draw() {
 
 
 
-      // Ears - Using triangles
-  fill(0); // Black color for the cat
+  // Ears -triangles
+  fill(0); // Black
   triangle(300, 100, 320, 50, 340, 100); // Left ear
   triangle(460, 100, 480, 50, 500, 100); // Right ear
 
   // Face - Using ellipse
   fill(0); // Black color for the cat
-  ellipse(400, 200, 200, 150); // Cat's face
+  ellipse(400, 200, 150, 150); // Cat's face
 
   // Eyes - Using ellipses
   fill(255); // White color for eyes
