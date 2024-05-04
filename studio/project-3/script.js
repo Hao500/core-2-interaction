@@ -1,15 +1,27 @@
 // 设置弹出拟态框，确保文档加载完毕后再绑定事件
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('.grid-item').forEach(item => {
-        item.addEventListener('click', function() {
-            var modal = document.getElementById("modal");
-            var modalImg = document.getElementById("modalImg");
-            var clock = document.getElementById("clock");
-            modal.style.display = "block";
-            clock.style.display = "block";
-            modalImg.src = this.children[0].src; // 假设每个.grid-item下面都是一个img元素
-        });
-    });
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     document.querySelectorAll('.grid-item').forEach(item => {
+//         item.addEventListener('click', function() {
+//             var modal = document.getElementById("modal");
+//             var modalImg = document.getElementById("modalImg");
+//             var clock = document.getElementById("clock");
+//             modal.style.display = "block";
+//             clock.style.display = "block";
+//             modalImg.src = this.children[0].src; // 假设每个.grid-item下面都是一个img元素
+//         });
+//     });
+// });
+
+const gridContainer = document.querySelector(".grid-container");
+const overlay = document.querySelector(".overlay");
+
+gridContainer.addEventListener("click", () => {
+  // This toggles the display style between 'flex' and 'none' each time a grid-item is clicked
+  if (overlay.style.display === "flex") {
+    overlay.style.display = "none";
+  } else {
+    overlay.style.display = "flex";
+  }
 });
 
 
@@ -37,11 +49,3 @@ function updateClock() {
 setInterval(updateClock,1000);
 
 
-function scrollToNext() {
-    // Find the currently active section
-    let currentSection = document.querySelector('.section.active');
-    if (currentSection.nextElementSibling) {
-        // Scroll to the next sibling element
-        currentSection.nextElementSibling.scrollIntoView({behavior: 'smooth'});
-    }
-}
