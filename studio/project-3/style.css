@@ -68,18 +68,6 @@ body {
   to { opacity: 1; }
 }
 
-/* .modal2{
-  display: none;
-  position:fixed;
-  align-items: center;
-  justify-content: center;
-  z-index: 120;
-  width: 60vw;
-  height: 30vh;
-  overflow: auto;
-  background-color: #cda3ca;
-  border: 3px solid green;
-} */
 
 #About {
   position: fixed; /* 使用固定定位 */
@@ -193,39 +181,16 @@ body {
   }
   
 
-  /* .modal {
-    display: none; /* 默认隐藏模态窗口 */
-    /* position: fixed; 固定定位 */
-    /* z-index: 1; 确保模态窗口在最上面 */
-    /* left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;  */
-    /* overflow: auto; 如果需要滚动条 */
-    /* background-color: rgba(0, 0, 0, 1); /* 背景颜色，有透明度 */
-  /* } */ 
-
-  /* .modal-content {
-    display: none;
-    position: absolute;
-    width: 100%; 
-    height: 100%; 
-    background-color: rgba(0, 0, 0, 0.8); 
-    z-index: 100;
-  } */
-
   .overlay {
     align-items: center;
     position: absolute;
     justify-content: center;
     background: rgba(0, 0, 0, 0.7);
-    display: grid;
-    height: 75vh;
-    width: 80vw;
+    display: none;
+    height: 100vh;
+    width: 100vw;
     left: 50;
     top: 50;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
   }
 
 
@@ -233,15 +198,17 @@ body {
     display: grid;
     gap: 2px;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     height: 60vh;  
     width: 60vw;  
   }
 
   
   .overlay-grid-item {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     height: 100%;
     width: 100%;
+    color: white;
   }
 
 
@@ -264,3 +231,21 @@ body {
 
   }
 
+  .flower-petal {
+    display: inline-block;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: purple;
+    animation: petal 1s  infinite;
+    animation-play-state: running;
+  }
+
+  @keyframes petal {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: yellow;
+    }
+  }
