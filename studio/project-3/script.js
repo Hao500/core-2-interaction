@@ -66,8 +66,27 @@ function updateClock() {
 
 setInterval(updateClock,1000);
 
-
-
+// 调取info button
+// 打开模态窗口的函数
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = 'block';  // 显示模态窗口
+    } else {
+      console.error('Modal with ID ' + modalId + ' does not exist.');
+    }
+  }
+  
+  // 关闭模态窗口的函数
+  function closeInfoModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = 'none';  // 隐藏模态窗口
+    } else {
+      console.error('Modal with ID ' + modalId + ' does not exist.');
+    }
+  }
+  
 
 
 

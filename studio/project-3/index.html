@@ -18,19 +18,20 @@
         <h2 class="title2">Clock</h2>
       </div> -->
 
-    <dialog id="modalAbout">
+    <div id="About" class="info">
       <p>This is the information of About</p>
-      <button onclick="document.getElementById('modalAbout').close()">&times</button>
-    </dialog>
+      <button onclick="closeInfoModal('About')">&times</button>
+    </div>
 
-    <dialog id="modalGuide">
+
+    <div id="Guide" class="info">
       <p>This is the information of Guide</p>
-      <button onclick="document.getElementById('modalGuide').close()">&times</button>
-    </dialog>
+      <button onclick="closeInfoModal('Guide')">&times</button>
+    </div>
 
 
-    <button id="About" onclick="document.getElementById('modalAbout').showModal()">About</button>
-    <button id="Guide" onclick="document.getElementById('modalGuide').showModal()">Guide</button>
+    <button id="buttonAbout" onclick="openModal('About')">About</button>
+    <button id="buttonGuide" onclick="openModal('Guide')">Guide</button>
 
     <div><a href="#section2" class="nextpagebtn">&#8595</a></div>
   </div>

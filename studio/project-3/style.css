@@ -69,7 +69,7 @@ body {
 }
 
 
-#About {
+#buttonAbout {
   position: fixed; 
   top: 10px;      
   right: 10px;   
@@ -83,7 +83,7 @@ body {
   
 }
 
-#Guide{
+#buttonGuide{
   position: fixed;
   top: 10px;     
   right: 160px;     
@@ -96,7 +96,8 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-dialog {
+.info {
+  display: none;
   width: 80%; /* 控制宽度，根据需求调整 */
   height: 30vh;
   border: none; /* 去除默认边框 */
@@ -112,6 +113,17 @@ dialog {
   transform: translate(-50%, -50%);
   z-index: 1000; /* 高层级确保显示在其他内容之上 */
   overflow: hidden;
+}
+
+
+.info.open{
+  top:50%;
+  display:block;
+}
+
+.info.closing{
+  top:100%;
+  transition:top 0.5s ease;
 }
 
 /* 对话框内的关闭按钮样式 */
