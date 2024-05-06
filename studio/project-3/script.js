@@ -66,26 +66,34 @@ function updateClock() {
 
 setInterval(updateClock,1000);
 
-// 调取info button
-// 打开模态窗口的函数
 function openModal(modalId) {
     var modal = document.getElementById(modalId);
     if (modal) {
-      modal.style.display = 'block';  // 显示模态窗口
+        modal.style.display = 'block'; // 确保模态窗口是可见的
+        modal.style.transform = 'translateX(-50%) translateY(100vh)'; // 设置初始位置在屏幕底部
+        setTimeout(() => {
+            modal.style.transform = 'translateX(-50%) translateY(-50%)'; // 移动到中央
+        }, 10); // 延迟确保从底部开始动画
     } else {
-      console.error('Modal with ID ' + modalId + ' does not exist.');
+        console.error('Modal with ID ' + modalId + ' does not exist.');
     }
-  }
-  
-  // 关闭模态窗口的函数
-  function closeInfoModal(modalId) {
+}
+
+
+// 关闭模态窗口的函数
+function closeInfoModal(modalId) {
     var modal = document.getElementById(modalId);
     if (modal) {
-      modal.style.display = 'none';  // 隐藏模态窗口
+        // 添加动画使元素平滑地移动回屏幕下方
+        modal.style.transform = 'translateX(-50%) translateY(100vh)';
+        setTimeout(() => { // 等待动画完成后再隐藏元素
+            modal.style.display = 'none';
+        }, 500); // 这里的延迟时间应与 CSS 中的 transition 时间相匹配
     } else {
-      console.error('Modal with ID ' + modalId + ' does not exist.');
+        console.error('Modal with ID ' + modalId + ' does not exist.');
     }
-  }
+}
+
   
 
 

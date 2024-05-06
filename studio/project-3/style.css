@@ -29,13 +29,8 @@ body {
   font-size: 100px; 
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* 文字阴影增加可读性 */
-  /* position: absolute; /* 绝对定位，确保它在背景之上 */
-  /* top: 50%; 垂直居中 */
-  /* left: 50%; /* 水平居中 */
-  /* transform: translate(-50%, -50%); 确保完全居中 */ 
-  z-index: 2; /* 高于背景的z-index */
-  animation: fadeIn 4s; /* 逐渐显示的效果 */
-
+  z-index: 2; 
+  animation: fadeIn 4s;
 }
 
 .title-container {
@@ -47,7 +42,6 @@ body {
   justify-content: center; /* 水平居中子元素 */
   align-items: center; /* 垂直居中子元素 */
   z-index: 500;
-
 }
 
 .title1 {
@@ -110,11 +104,11 @@ body {
   position: fixed; /* 固定定位，使其始终在视口中央 */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%) translateY(100vh); /* 开始时在屏幕下方 */
+  transition: transform 0.5s ease; /* 平滑过渡效果 */
   z-index: 1000; /* 高层级确保显示在其他内容之上 */
   overflow: hidden;
 }
-
 
 .info.open{
   top:50%;
@@ -127,22 +121,23 @@ body {
 }
 
 /* 对话框内的关闭按钮样式 */
-dialog button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: rgb(162, 151, 151); /* 深红色背景 */
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+/* Info框内的关闭按钮样式 */
+.info button {
+  position: absolute;  /* 绝对定位 */
+  top: 10px;  /* 顶部位置 */
+  right: 10px;  /* 右侧位置 */
+  background: none;  /* 移除背景 */
+  border: none;  /* 移除边框 */
+  font-size: 24px;  /* 字体大小 */
+  color: black;  /* 字体颜色，根据背景色调整 */
+  cursor: pointer;  /* 鼠标悬停时手形光标 */
 }
+
+/* 鼠标悬停时的样式变化 */
+.info button:hover {
+  color: grey;  /* 悬停时字体颜色变为灰色 */
+}
+
 
 .nextpagebtn {
   bottom: 20px;
