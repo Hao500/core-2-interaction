@@ -31,6 +31,13 @@ gridContainer.addEventListener("click", () => {
   } else {
     overlay.style.display = "flex";
   }
+
+    //获取点击时的元素，此时是img
+    const target = event.target;
+    //找到父元素，此时是item的div
+    var item = target.parentNode;
+    //获得item的id，接下来根据id来展示不同的日历
+    console.log(item.id);
 });
 
 overlay.addEventListener("click", () => {
