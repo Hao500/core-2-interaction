@@ -11,11 +11,27 @@ function addPetal(dayOfMonth) {
   day.appendChild(flowerPetal);
 }
 
-//addPetal("item-11");
-//addPetal("item-16");
-//addPetal("item-16");
-
-
+//展示日历
+function showPetal(itemId) {
+    //清空日历
+    var overlayGridItems = document.getElementsByClassName("overlay-grid-item");
+    for(var i = 0, len = overlayGridItems.length; i < len; i++) {
+        while (overlayGridItems[i].getElementsByClassName("flower-petal")[0]) {
+            overlayGridItems[i].removeChild(overlayGridItems[i].getElementsByClassName("flower-petal")[0]);
+        }
+    }
+    //添加新的petal
+    if (itemId === "item1") {
+        addPetal("item-7");
+        addPetal("item-8");
+        addPetal("item-8");
+        addPetal("item-9");
+    } else if (itemId === "item2") {
+        addPetal("item-17");
+        addPetal("item-18");
+        addPetal("item-19");
+    }
+}
 
 // END JS Flower example
 // -------------------
@@ -37,6 +53,7 @@ gridContainer.addEventListener("click", () => {
   var item = target.parentNode;
   //获得item的id，接下来根据id来展示不同的日历
   console.log(item.id);
+  showPetal(item.id);
 });
 
 overlay.addEventListener("click", () => {

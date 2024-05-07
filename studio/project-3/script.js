@@ -11,10 +11,108 @@ function addPetal(dayOfMonth) {
   day.appendChild(flowerPetal);
 }
 
-addPetal("item-11");
-addPetal("item-16");
-addPetal("item-16");
+//展示日历
+function showPetal(itemId) {
+  //清空日历
+  var overlayGridItems = document.getElementsByClassName("overlay-grid-item");
+  for(var i = 0, len = overlayGridItems.length; i < len; i++) {
+      while (overlayGridItems[i].getElementsByClassName("flower-petal")[0]) {
+          overlayGridItems[i].removeChild(overlayGridItems[i].getElementsByClassName("flower-petal")[0]);
+      }
+  }
 
+  //添加新的petal
+  if (itemId === "item1") {
+      addPetal("item-6");
+      addPetal("item-8");
+      addPetal("item-13");
+      addPetal("item-15");
+      addPetal("item-17");
+      addPetal("item-21");
+      addPetal("item-22");
+      addPetal("item-23");addPetal("item-23");
+      addPetal("item-24");
+      addPetal("item-25");
+      addPetal("item-26"); addPetal("item-26"); 
+      addPetal("item-27");
+      addPetal("item-28");
+      addPetal("item-29");addPetal("item-29");
+      addPetal("item-30");
+   
+    
+  } else if (itemId === "item2") {
+      addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");
+      addPetal("item-17");addPetal("item-17");addPetal("item-17");addPetal("item-17");
+      addPetal("item-18");
+      addPetal("item-19");
+  } else if (itemId === "item3") {
+    addPetal("item-3");
+    addPetal("item-9");
+    addPetal("item-14");
+    addPetal("item-18");
+    addPetal("item-21");addPetal("item-21");
+    addPetal("item-25");
+    addPetal("item-29");
+  }else if (itemId === "item4") {
+    addPetal("item-9");
+    addPetal("item-12");
+    addPetal("item-13");
+    addPetal("item-14");
+    addPetal("item-15");addPetal("item-15");addPetal("item-15");addPetal("item-15");addPetal("item-15");
+    addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");
+    addPetal("item-17"); addPetal("item-17"); addPetal("item-17"); addPetal("item-17"); addPetal("item-17"); addPetal("item-17"); addPetal("item-17"); addPetal("item-17"); addPetal("item-17"); addPetal("item-17"); addPetal("item-17");
+    addPetal("item-19");addPetal("item-19");addPetal("item-19");addPetal("item-19");addPetal("item-19");addPetal("item-19");
+    addPetal("item-20"); addPetal("item-20"); addPetal("item-20"); addPetal("item-20");
+    addPetal("item-21"); addPetal("item-21"); addPetal("item-21");
+    addPetal("item-22");addPetal("item-22");addPetal("item-22");addPetal("item-22");
+    addPetal("item-23");addPetal("item-23");addPetal("item-23");
+    addPetal("item-24");addPetal("item-24");
+    addPetal("item-25");addPetal("item-25");
+    addPetal("item-26");
+    addPetal("item-27");
+
+
+  }else if (itemId === "item5") {
+    addPetal("item-17");
+    addPetal("item-18");
+    addPetal("item-19");
+  }else if (itemId === "item6") {
+    addPetal("item-15");addPetal("item-15");addPetal("item-15");addPetal("item-15");addPetal("item-15");addPetal("item-15");
+    addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");addPetal("item-16");
+
+    addPetal("item-17");addPetal("item-17");addPetal("item-17");addPetal("item-17");
+    addPetal("item-18");addPetal("item-18");addPetal("item-18");
+    addPetal("item-19");
+    addPetal("item-20");  addPetal("item-20");  addPetal("item-20");
+    addPetal("item-21");
+    addPetal("item-22");addPetal("item-22");
+    addPetal("item-23");
+}else if (itemId === "item7") {
+  addPetal("item-17");
+  addPetal("item-18");
+  addPetal("item-19");
+}else if (itemId === "item8") {
+  addPetal("item-17");
+  addPetal("item-18");
+  addPetal("item-19");
+}else if (itemId === "item9") {
+  addPetal("item-17");
+  addPetal("item-18");
+  addPetal("item-19");
+}else if (itemId === "item10") {
+  addPetal("item-17");
+  addPetal("item-18");
+  addPetal("item-19");
+}else if (itemId === "item11") {
+  addPetal("item-17");
+  addPetal("item-18");
+  addPetal("item-19");
+}else if (itemId === "item12") {
+  addPetal("item-17");
+  addPetal("item-18");
+  addPetal("item-19");
+}
+}
 
 
 // END JS Flower example
@@ -31,14 +129,16 @@ gridContainer.addEventListener("click", () => {
   } else {
     overlay.style.display = "flex";
   }
-
-    //获取点击时的元素，此时是img
-    const target = event.target;
-    //找到父元素，此时是item的div
-    var item = target.parentNode;
-    //获得item的id，接下来根据id来展示不同的日历
-    console.log(item.id);
+  //获取点击时的元素，此时是img
+  const target = event.target;
+  //找到父元素，此时是item的div
+  var item = target.parentNode;
+  //获得item的id，接下来根据id来展示不同的日历
+  console.log(item.id);
+  showPetal(item.id);
 });
+
+
 
 overlay.addEventListener("click", () => {
   // This toggles the display style between 'flex' and 'none' each time a grid-item is clicked
@@ -100,6 +200,11 @@ function closeInfoModal(modalId) {
         console.error('Modal with ID ' + modalId + ' does not exist.');
     }
 }
+
+
+
+
+
 
   
 
