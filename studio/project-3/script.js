@@ -88,12 +88,26 @@ function showPetal(itemId) {
     addPetal("item-22");addPetal("item-22");
     addPetal("item-23");
 }else if (itemId === "item7") {
-  addPetal("item-17");
-  addPetal("item-18");
+  addPetal("item-5");
+  addPetal("item-13");
+  addPetal("item-16");
   addPetal("item-19");
+  addPetal("item-22");
+  addPetal("item-23");
+  addPetal("item-24");
+  addPetal("item-30");
 }else if (itemId === "item8") {
-  addPetal("item-17");
-  addPetal("item-18");
+  addPetal("item-3");
+  addPetal("item-1");addPetal("item-1");
+  addPetal("item-7");
+  addPetal("item-12");addPetal("item-12");addPetal("item-12");
+  addPetal("item-14");
+  addPetal("item-19");
+  addPetal("item-20");
+  addPetal("item-24");addPetal("item-24");
+  addPetal("item-28");
+  addPetal("item-29");
+  addPetal("item-30");
   addPetal("item-19");
 }else if (itemId === "item9") {
   addPetal("item-17");
