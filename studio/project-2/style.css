@@ -219,7 +219,7 @@ body {
 }
 
 
-.linkhomepage{
+.link-homepage{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -230,6 +230,11 @@ body {
   color:rgb(47, 210, 255);
   text-decoration: none;
 }
+
+.link-homepage:hover {
+  color: #007BFF;
+}
+
 
 .gif{
   width:50vw;
